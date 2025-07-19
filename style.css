@@ -1,0 +1,132 @@
+:root {
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+    --accent-color: #6c63ff;
+    --task-bg: #fff;
+    --task-done: #d4ffd4;
+}
+
+body.dark {
+    --bg-color: #121212;
+    --text-color: #fff;
+    --accent-color: #bb86fc;
+    --task-bg: #1e1e1e;
+    --task-done: #2e7d32;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 16px;
+    background: var(--task-bg);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#toggleMode {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.input-section {
+    display: flex;
+    margin-top: 20px;
+}
+
+#textInput {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px 0 0 8px;
+    outline: none;
+}
+
+#addTaskBtn {
+    background: var(--accent-color);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.filters {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter {
+    flex: 1;
+    margin: 0 5px;
+    padding: 8px;
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter.active, .filter:hover {
+    background: var(--accent-color);
+    color: #fff;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    background: var(--task-bg);
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideIn 0.4s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.task button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.task.completed {
+    background: var(--task-done);
+    text-decoration: line-through;
+    opacity: 0.7;
+}
