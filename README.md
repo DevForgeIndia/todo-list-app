@@ -1,8 +1,9 @@
 # 🌟 To-Do List App
 
 A beautifully animated and fully functional To-Do List App built using **HTML**, **CSS**, and **JavaScript** — no frameworks involved.
-
+---
 ![todo-preview](preview.png)
+![todo-preview](preview_2.png)
 ---
 
 ## ✨ Features
@@ -19,7 +20,7 @@ A beautifully animated and fully functional To-Do List App built using **HTML**,
 ## 🚀 Live Demo
 
 👉 [Click here to try it out](https://devforgeindia.github.io/todo-list-app/)  
-👉 [Watch the YouTube Tutorial](https://youtube.com/your-video-link)
+👉 [Watch the YouTube Tutorial](https://youtu.be/dxO0nWQk6dI)
 
 ---
 
@@ -60,8 +61,14 @@ Try adding:
 - ⏰ Due dates
 - 🗂️ Task categories
 
-🙌 Support
+---
+
+## 🙌 Support
+
 If you like this project, consider ⭐ starring the repo and subscribing on YouTube!
 
-📬 Connect With Me
-YouTube: 
+---
+
+## 📬 Connect With Me
+
+Made with 💖 by [DevForge India](https://www.youtube.com/@DevForge-India)
