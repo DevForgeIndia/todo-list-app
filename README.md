@@ -48,7 +48,7 @@ A beautifully animated and fully functional To-Do List App built using **HTML**,
 ## 🛠️ Installation
 
 ```bash
-git clone https://github.com/your-username/todo-list-app.git
+git clone https://github.com/DevForgeIndia/todo-list-app.git
 cd todo-list-app
 open index.html
 ```
